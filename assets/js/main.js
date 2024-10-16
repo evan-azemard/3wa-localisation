@@ -14,7 +14,6 @@ const getLocation = () => {
 					if(response.features.length > 0 ){
 						const adress = response.features[0].properties.label;
 						paragraph.textContent = `adresse : ${adress}`;
-
 					}
 				}).catch(error => {
 				console.log(error);
